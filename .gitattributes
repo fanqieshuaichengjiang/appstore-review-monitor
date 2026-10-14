@@ -1,0 +1,15 @@
+# 统一换行符，避免不同系统 clone 后出现「整个文件都变了」的假 diff
+* text=auto eol=lf
+
+# Windows 批处理必须是 CRLF，LF 结尾的老式 cmd 解析可能出错
+*.bat text eol=crlf
+
+# 文本文件给 Windows 用户留 CRLF（记事本友好）
+*.txt text eol=crlf
+*.md text eol=crlf
+
+# 二进制，禁止任何换行符转换（exe 被当成文本处理会直接损坏）
+*.exe binary
+*.png binary
+*.ico binary
+*.zip binary

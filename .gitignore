@@ -1,0 +1,31 @@
+# ---- 本地配置（含你自己的应用 ID，别提交）----
+# config.json 在首次运行时会自动生成，不需要提交到仓库
+config.json
+config.json.tmp
+
+# ---- 运行时数据 ----
+history/
+report/
+backup/
+logs/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- 打包产物 ----
+build/
+dist/
+*.manifest
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
